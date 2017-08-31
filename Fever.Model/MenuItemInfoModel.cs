@@ -4,11 +4,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Fever.Model
 {
-    public class MenuItemInfoModel
+    public class MenuItemInfoModel : ModelBase
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int MenuItemId { get; set; }
         [StringLength(20)]
         public string MenuItemText { get; set; }
         [StringLength(50)]

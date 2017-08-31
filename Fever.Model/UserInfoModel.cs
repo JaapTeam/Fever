@@ -3,9 +3,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Fever.Model
 {
-    public class UserInfoModel
+    public class UserInfoModel : ModelBase
     {
-        [Key]
         [StringLength(30)]
         public string UserName { get; set; }
         public string Password { get; set; }
